@@ -9,20 +9,19 @@ import android.view.ViewGroup;
 
 import com.sparrowmon.readerapp.R;
 import com.sparrowmon.readerapp.views.holders.BannerViewHolder;
-import com.sparrowmon.readerapp.views.holders.BaseViewHolder;
 
-public class BannerAdapter extends RecyclerView.Adapter<BaseViewHolder> {
+public class BannerAdapter extends RecyclerView.Adapter<BannerViewHolder> {
     @NonNull
     @Override
-    public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public BannerViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         View view = inflater.inflate(R.layout.view_item_banner,viewGroup,false);
-        return new BaseViewHolder(view);
+        return new BannerViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BaseViewHolder baseViewHolder, int i) {
+    public void onBindViewHolder(@NonNull BannerViewHolder baseViewHolder, int i) {
 
 
 

@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import com.sparrowmon.readerapp.R;
 import com.sparrowmon.readerapp.adapters.BannerAdapter;
 import com.sparrowmon.readerapp.fragments.BannerFragment;
+import com.sparrowmon.readerapp.fragments.PopularFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,12 +24,13 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fl_banner, BannerFragment.newInstance())
+                .commit();
 
         getSupportFragmentManager().beginTransaction()
-                                    .replace(R.id.fl_banner, BannerFragment.newInstance("banner fragment"))
-                                    .commit();
-
+                .replace(R.id.fl_popular, PopularFragment.newInstance())
+                .commit();
 
 
     }

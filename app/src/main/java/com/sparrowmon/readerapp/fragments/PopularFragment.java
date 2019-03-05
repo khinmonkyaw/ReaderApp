@@ -9,29 +9,29 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 
 import com.sparrowmon.readerapp.R;
-import com.sparrowmon.readerapp.adapters.BannerAdapter;
+import com.sparrowmon.readerapp.adapters.PopularAdapter;
 
-public class BannerFragment extends Fragment {
+public class PopularFragment extends Fragment {
 
+    public static PopularFragment newInstance() {
 
-    public static BannerFragment newInstance() {
-        return new BannerFragment();
+        return new PopularFragment();
     }
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_banner,container,false);
+        View view = inflater.inflate(R.layout.fragment_pupular, container, false);
 
-        RecyclerView recyclerView = view.findViewById(R.id.rv_banner);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
+        RecyclerView recyclerView = view.findViewById(R.id.rv_popular);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
-        BannerAdapter bannerAdapter = new BannerAdapter();
-        recyclerView.setAdapter(bannerAdapter);
+        PopularAdapter popularAdapter = new PopularAdapter();
+        recyclerView.setAdapter(popularAdapter);
         return view;
     }
 }
