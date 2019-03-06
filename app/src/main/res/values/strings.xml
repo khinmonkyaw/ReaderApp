@@ -1,7 +1,12 @@
 <resources>
-    <string name="app_name">ReaderApp</string>
+    <string name="app_name">မေဟာ္သဓာ</string>
     <string name="action_settings">Settings</string>
     <string name="tv_popular">လူသိမ်ားေသာ</string>
     <string name="show_all"><u>အကုန္ျပ</u></string>
     <string name="tv_new">အသစ္ထြက္</string>
+    <string name="tv_new_desc">“ ဝူခ်င္း….” ရီဖူရွင္း၏ အမူအယာ ေျပာင္းလဲသြားသည္။ ရီဝူခ်င္းကား ဓမၼအဆင့္ေလးမွ်သာ ရွိၿပီး တစ္ဘက္လူကား ဓမၼအဆင့္ အျမင့္ဆုံးတြင္ ျဖစ္သည္။ သူတို႔ႏွစ္ေယာက္လုံးတြင္ သဒၶိဝင္ဓါးကို ပိုင္ဆိုင္ၾကသည္။</string>
+    <string name="tv_new_title">ကြၽႏု္ပ္ ႏွင့္ မိုးကုတ္သူေ႒း ဗိုက္ကေလး</string>
+
+    <string name="stastics">ဖတ္ရႈသူ: <b> <xliff id="reader_count">%1$d</xliff> ဦး</b>ေပးပို႔သူ: <b><xliff id="sender_count">%2$d</xliff></b></string>
+    <string name="tv_app_name">မေဟာ္သဓာ</string>
 </resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:elevation="3dp"
+                app:cardCornerRadius="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_new"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/popular_book" />
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/iv_send"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_sent_mail"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/cv_new"
+                android:layout_marginRight="@dimen/margin_medium_3"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:background="@color/bg">
+
+                <TextView
+                    android:id="@+id/tv_new_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="114dp"
+                    android:paddingRight="@dimen/margin_medium_2"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:text="@string/tv_new_title"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_regular" />
+
+                <TextView
+                    android:id="@+id/tv_new_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_new_title"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:ellipsize="end"
+                    android:lineSpacingMultiplier="1.3"
+                    android:maxLines="3"
+                    android:paddingLeft="114dp"
+                    android:paddingRight="@dimen/margin_medium_2"
+                    android:paddingBottom="@dimen/margin_medium"
+                    android:text="@string/tv_new_desc"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/gray_less"/>
+            </RelativeLayout>
+
+
+            <!--<TextView
+                android:id="@+id/tv_stastics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stastics"
+                android:textSize="@dimen/text_small"
+                android:layout_below="@id/rl1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_medium_2"/>-->
+
+            <TextView
+                android:id="@+id/tv_reader_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ဖတ္ရႈသူ : "
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/gray_less"
+                android:layout_below="@id/rl1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                />
+
+            <TextView
+                android:id="@+id/tv_reader_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="43 ဦး"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/gray"
+                android:layout_below="@id/rl1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_toRightOf="@+id/tv_reader_label"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_sender_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   ေပးပို႔သူ : "
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/gray_less"
+                android:layout_below="@id/rl1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_toRightOf="@+id/tv_reader_count"
+                />
+
+            <TextView
+                android:id="@+id/tv_sender_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18 ဦး"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/gray"
+                android:layout_below="@id/rl1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_toRightOf="@+id/tv_sender_label"
+
+                />
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

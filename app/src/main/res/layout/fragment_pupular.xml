@@ -13,22 +13,36 @@
         android:textSize="@dimen/text_regular"
         android:layout_marginLeft="@dimen/margin_medium_3"/>
 
+
     <TextView
         android:id="@+id/tv_show_all"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/show_all"
-        android:textColor="@color/gray_less"
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/margin_medium_2"
+        android:clickable="true"
+        android:padding="@dimen/margin_small"
+        android:text="@string/show_all"
+        android:textColor="@color/gray_less"
+        android:textStyle="bold|italic"
         android:textSize="@dimen/text_small"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_show_all"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/show_all"-->
+        <!--android:textColor="@color/gray_less"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="@dimen/margin_medium_2"-->
+        <!--android:textSize="@dimen/text_small"/>-->
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_popular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_pupular"
-        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium"
         android:background="@android:color/transparent"
         />
 
